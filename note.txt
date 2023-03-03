@@ -1,0 +1,8 @@
+install 
+https://github.com/NVlabs/cub
+
+
+Manually create file
+
+cmake
+https://stackoverflow.com/questions/49859457/how-to-reinstall-the-latest-cmake-version
