@@ -1,5 +1,8 @@
 For Q1, the join seems to be not applied. For Q1.1, why not use Year EQ, but rather GT 1993 LS 1994
 
+
+cub::CachingDeviceAllocator is a memory allocator class provided by the CUDA Unbound library (CUB). It is designed to allocate and deallocate memory on a CUDA device, and to cache previously allocated memory to reduce overheads associated with repeatedly allocating and deallocating memory.
+
 Query parallelism: for deep tree, it might be better for one thread per tree. Like sort.
 
 The crazy number in column files are garbage number just to fill the attribute size.
