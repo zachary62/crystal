@@ -8,3 +8,5 @@ Query parallelism: for deep tree, it might be better for one thread per tree. Li
 The crazy number in column files are garbage number just to fill the attribute size.
 
 For hash join, it just indicate whether the join key exists, but do not store the tuple value in hash bins. (which makes a lot of sense to avoid join). However, based on the assumption of many-to-one.
+
+The row length (LO_LEN) are hard coded in github1s:/src/ssb/ssb_utils.h
