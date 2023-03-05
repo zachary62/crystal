@@ -18,4 +18,4 @@ For query 1, the date relation is not even used??
 
 BlockBuildSelectivePHT_2 has key value pair.
 
-The hash table store not only 0,1. but the key-vlaue,
+The hash table store not only 0,1. but the key-vlaue. (value is for attributes want to keep)
