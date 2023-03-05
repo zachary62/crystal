@@ -1,5 +1,6 @@
 For Q1, the join seems to be not applied. For Q1.1, why not use Year EQ, but rather GT 1993 LS 1994
 
+res size needs to be known.
 
 cub::CachingDeviceAllocator is a memory allocator class provided by the CUDA Unbound library (CUB). It is designed to allocate and deallocate memory on a CUDA device, and to cache previously allocated memory to reduce overheads associated with repeatedly allocating and deallocating memory.
 
@@ -9,6 +10,12 @@ The crazy number in column files are garbage number just to fill the attribute s
 
 For hash join, it just indicate whether the join key exists, but do not store the tuple value in hash bins. (which makes a lot of sense to avoid join). However, based on the assumption of many-to-one.
 
+The hash table is an array of integer. What will happen if hash collision? I don't think hash collision will work correctly.
+
 The row length (LO_LEN) are hard coded in github1s:/src/ssb/ssb_utils.h
 
 For query 1, the date relation is not even used??
+
+BlockBuildSelectivePHT_2 has key value pair.
+
+The hash table store not only 0,1. but the key-vlaue,
